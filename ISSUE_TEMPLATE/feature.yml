@@ -1,0 +1,33 @@
+name: Feature
+description: Chức năng mới
+type: Feature
+labels: [needs-triage]
+projects: ["startup-nd/1"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Bối cảnh / vấn đề
+      description: Vì sao cần làm việc này? Ai được lợi?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Việc cần làm
+      description: Mô tả giải pháp dự kiến, API/màn hình bị ảnh hưởng
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Tiêu chí chấp nhận
+      placeholder: |
+        - [ ] Gọi POST /orders trả về 201 và orderId
+        - [ ] Đơn hàng lưu với trạng thái PENDING
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Ghi chú kỹ thuật / service liên quan

@@ -1,0 +1,16 @@
+name: Task
+description: Việc kỹ thuật (refactor, cấu hình, nâng version, tài liệu)
+type: Task
+projects: ["startup-nd/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Việc cần làm
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Hoàn thành khi
+      placeholder: "- [ ] ..."
